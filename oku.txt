@@ -1,0 +1,14 @@
+Bu klasörler ne işe yarayacak?
+Klasör	Görevi
+components	Butonlar, kartlar, formlar gibi tekrar kullanılacak parçalar
+pages	Ana sayfa, Ayarlar, Raporlar gibi ekranlar
+hooks	React'e özel yardımcı fonksiyonlar
+services	Veri kaydetme, yedekleme gibi işlemler
+utils	Tarih hesaplama, kalan gün hesaplama gibi yardımcı fonksiyonlar
+data	Örnek veriler ve sabit bilgiler
+
+
+
+cmd arac-takip e git npm run dev çalıştır.
+http://localhost:5173
+
