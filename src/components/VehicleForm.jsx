@@ -21,22 +21,25 @@ export default function VehicleForm({ onSave }) {
   }
 
   function handleSubmit(e) {
-    e.preventDefault();
+  e.preventDefault();
 
-    if (!vehicle.plate.trim()) {
-      alert("Plaka zorunludur.");
-      return;
-    }
+  console.log("FORM GÖNDERİLDİ");
 
-    onSave({
-      id: Date.now(),
-      ...vehicle,
-    });
-
-    setVehicle(emptyVehicle);
+  if (!vehicle.plate.trim()) {
+    alert("Plaka zorunludur.");
+    return;
   }
 
-  return (
+  console.log("KAYDEDİLECEK ARAÇ:", vehicle);
+
+  onSave({
+    id: Date.now(),
+    ...vehicle,
+  });
+
+  setVehicle(emptyVehicle);
+}
+   return (
     <form
       onSubmit={handleSubmit}
       className="bg-white rounded-2xl shadow p-5 mt-5"
